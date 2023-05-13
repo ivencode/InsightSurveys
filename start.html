@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>InsightSurvey - Startseite</title>
+    <style>
+        /* Stilisierung */
+        body {
+            background-color: #f2f2f2;
+            color: #333333;
+        }
+
+        .container {
+            width: 80%;
+            max-width: 500px;
+            margin: 0 auto;
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+            margin-top: 100px;
+        }
+
+        h1 {
+            margin-bottom: 20px;
+        }
+
+        button {
+            background-color: #0077cc;
+            color: #ffffff;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Willkommen bei InsightSurvey</h1>
+        <button onclick="createSurvey()">Umfrage erstellen</button>
+        <button onclick="answerSurvey()">Umfragen beantworten und geld verdienen</button>
+    </div>
+
+    
+
+    <script>
+        function createSurvey() {
+            window.location.href = "umfrage_erstellen.html";
+        }
+        function answerSurvey() {
+            window.location.href = "answer_surveys.html";
+        }
+    </script>
+</body>
+</html>

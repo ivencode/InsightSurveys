@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>InsightSurvey - Umfragen</title>
+    <style>
+        /* Stilisierung */
+        body {
+            background-color: #f2f2f2;
+            color: #333333;
+        }
+
+        .container {
+            width: 80%;
+            max-width: 500px;
+            margin: 0 auto;
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 10px;
+            margin-top: 100px;
+        }
+
+        h1 {
+            margin-bottom: 20px;
+        }
+
+        .survey-item {
+            margin-bottom: 10px;
+            padding: 10px;
+            border: 1px solid #dddddd;
+            border-radius: 5px;
+            background-color: #f9f9f9;
+        }
+
+        .survey-item .title {
+            font-weight: bold;
+        }
+
+        .survey-item .earning {
+            color: #0077cc;
+        }
+        input[name="thema"]{
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+        button[type="tosurvey"]{
+            color: #0077cc;
+            width: 30px;
+            height: 30px;
+            background-color: #0077cc;
+            margin-left: 80%;
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Umfragen</h1>
+        <input type="text" name="thema" required placeholder="Thema eingeben">     
+        <div class="survey-item">
+            <div class="title">Umfrage 1</div>
+            <button type="tosurvey" onclick="survey1()"></button>
+            <div class="earning">Verdienst: $5</div>
+        </div>
+
+        <div class="survey-item">
+            <div class="title">Umfrage 2</div><button type="tosurvey" onclick="survey2()"></button>
+            <div class="earning">Verdienst: $10</div>
+        </div>
+
+        <div class="survey-item">
+            <div class="title">Umfrage 3</div><button type="tosurvey" onclick="survey3()"></button>
+            <div class="earning">Verdienst: $8</div>
+        </div>
+
+        <!-- Weitere Umfragen hier einfügen -->
+
+    </div>
+    <script>
+        function survey1() {
+            window.location.href = "survey1.html";
+        }
+        function survey2() {
+            window.location.href = "survey2.html";
+        }
+        function survey3() {
+            window.location.href = "survey3.html";
+        }
+        
+    </script>
+</body>
+</html>

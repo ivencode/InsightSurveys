@@ -73,11 +73,16 @@
         button[type="createquestion"]{
             margin-bottom: 10px;
         }
+        button[type="backbutton"]{
+            top:4%;
+            left: 4%;
+            width: 100px;
+        }
     </style>
 </head>
 <body>
     <h1>Questlex Umfrage</h1>
-
+    <button id="backbutton" type="backbutton" onclick="backtostart()">zurück</button>
     <form id="surveyForm">
         <div id="questionsContainerquali"></div>
 
@@ -135,12 +140,14 @@
         }
 
         function veröffentlichen() {
-            var budgetclick = document.getElementsByName("totalBudget").value;
-            window.alert(budgetclick);
+            
         }
 
         function updateBudgetValue(elementId, value) {
             document.getElementById(elementId).textContent = value;
+        }
+        function backtostart(){
+            window.location.href = "start.html";
         }
     </script>
 </body>
