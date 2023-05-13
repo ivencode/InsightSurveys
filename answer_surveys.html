@@ -48,13 +48,18 @@
             height: 30px;
             background-color: #0077cc;
             margin-left: 80%;
-            
+        }
+        button[type="backbutton"]{
+            top:4%;
+            left: 4%;
+            width: 100px;
         }
     </style>
 </head>
 <body>
     <div class="container">
         <h1>Umfragen</h1>
+        <button id="backbutton" type="backbutton" onclick="backtostart()">zurück</button>
         <input type="text" name="thema" required placeholder="Thema eingeben">     
         <div class="survey-item">
             <div class="title">Umfrage 1</div>

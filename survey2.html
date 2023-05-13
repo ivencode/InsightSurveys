@@ -34,12 +34,17 @@
         .participants {
             font-style: italic;
         }
+        button[type="backbutton"]{
+            top:4%;
+            left: 4%;
+            width: 100px;
+        }
     </style>
 </head>
 <body>
     <div class="container">
         <h1>Umfrage 2</h1>
-
+        <button id="backbutton" type="backbutton" onclick="backtostart()">zurück</button>
         <div class="question">Frage 1: Wie oft nutzen Sie unser Produkt?</div>
         <div class="question">Frage 2: Welche Funktion gefällt Ihnen am besten?</div>
 
